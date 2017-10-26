@@ -8,3 +8,7 @@
 ```
 docker build -t hykw/elixir:1.5.2 .
 ```
+
+## Notice
+
+As Elixir consumes all the remaining memory when making, it fails to build a image on t2.micro(mem:1GB).
