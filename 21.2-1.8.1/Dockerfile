@@ -2,6 +2,7 @@ FROM hykw/erlang:21.2
 
 LABEL  maintainer "Hitoshi Hayakawa <hykw1234@gmail.com>"
 
+RUN yum -y install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
 RUN yum -y install git telnet mysql && \
   yum -y install http://dl.fedoraproject.org/pub/epel/6/i386/Packages/i/inotify-tools-3.14-1.el6.i686.rpm
 
